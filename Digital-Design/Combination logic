@@ -7,3 +7,14 @@ Inverter
 
 
 **In place of "//...", type "$out = ! $in1;". Be sure to preserve the 3-spaces of indentation, similar to the surrounding expressions. This is an inverter
+Why we are usiing the TL-Verilog means
+Important note: We where are using Makerchip 
+TL-Verilog defines syntax very rigidly. This can be a source of annoyance for newcomers with their own coding style preferences. But this rigidity has an important benefit.
+In industry, code is touched by many hands from many teams, and this rigidity enforces consistency. The TL-Verilog Syntax Specification can be found from the Makerchip "Help" menu,
+but we will cover the necessary points as we go
+
+Boolean Logic Expression 
+TLV Sytax
+$foo = (  $val1 &&   $val2) || (! $val1 && ! $val2);
+Below is the Flow chart by that you can understand
+
