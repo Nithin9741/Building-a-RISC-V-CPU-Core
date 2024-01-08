@@ -1,0 +1,7 @@
+<header> Inverter </header>
+<body>
+Unlike Verilog, there was no need to declare your signals (wires) ($out and $in1). 
+In TL-Verilog, your assignment statement acts as the declaration of its output signal(s).
+This circuit has a dangling input signal and a dangling output signal. It also probably has a dangling $reset signal that was provided in the template.
+These result in non-fatal warning/error conditions. They are reported, but they do not prevent simulation
+</body>
