@@ -1,7 +1,9 @@
-### Inverter
-<body>
-Unlike Verilog, there was no need to declare your signals (wires) ($out and $in1). 
-In TL-Verilog, your assignment statement acts as the declaration of its output signal(s).
-This circuit has a dangling input signal and a dangling output signal. It also probably has a dangling $reset signal that was provided in the template.
-These result in non-fatal warning/error conditions. They are reported, but they do not prevent simulation
-</body>
+Inverter
+
+*Unlike Verilog, there was no need to declare your signals (wires) ($out and $in1). 
+*In TL-Verilog, your assignment statement acts as the declaration of its output signal(s).
+*This circuit has a dangling input signal and a dangling output signal. It also probably has a dangling $reset signal that was provided in the template.
+*These result in non-fatal warning/error conditions. They are reported, but they do not prevent simulation
+
+
+**In place of "//...", type "$out = ! $in1;". Be sure to preserve the 3-spaces of indentation, similar to the surrounding expressions. This is an inverter
