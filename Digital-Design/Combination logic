@@ -1,4 +1,4 @@
-<header> Inverter </header>
+**Inverter**
 <body>
 Unlike Verilog, there was no need to declare your signals (wires) ($out and $in1). 
 In TL-Verilog, your assignment statement acts as the declaration of its output signal(s).
