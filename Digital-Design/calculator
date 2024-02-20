@@ -8,3 +8,25 @@ $sum[31:0] = $var1[31:0] + $var2[31:0];
                 $op == 2'b01 ? $diff:
                 $op == 2'b10 ? $prod;
                  $quot; //default
+
+Below "m4_makerchip_module", add this on its own line: "/* verilator lint_on WIDTH */", and press Ctrl-Enter to compile and simulate. Debug LOG messages as necessary.
+Now, it should be easier to understand the waveforms, so visually verify the operation of your calculator. Verify that it saved (message in upper right).
+modified code is below
+\SV
+   // Macro providing required top-level module definition, random
+   // stimulus support, and Verilator config.
+   m5_makerchip_module   // (Expanded in Nav-TLV pane.)
+   /* verilator lint_on WIDTH */
+\TLV
+   $val1[31:0] = {26'b0, $var1_rand[5:0]};
+   $val2[31:0] = {28'b0, $var2_rand[5:0]};
+   
+   $sum[31:0] = $var1[31:0] + $var2[31:0];
+   $diff[31:0]  = $var1[31:0] + $var2[31:0];
+   $prod[31:0] = $var1 * $var2;
+   $quot[31:0] = $var1 / $var2;
+   
+   $out[31:0] = $op == 2'b00 ? $sum:
+                $op == 2'b01 ? $diff:
+                $op == 2'b10 ? $prod;
+                 $quot;
