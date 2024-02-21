@@ -30,3 +30,10 @@ modified code is below
                 $op == 2'b01 ? $diff:
                 $op == 2'b10 ? $prod;
                  $quot;
+Recirculating calculator
+*Return to your combinational calculator project.
+*Assign $val1[31:0] to the previous value of $out (replacing its old assignment).Add a $reset signal and a new (highest priority) MUX input to reset $out to zero.
+*Visually confirm proper operation in VIZ and WAVEFORM. Note that negative values will be represented with upper bits equal to 1 so "fff…" in hexadecimal.(You could disable subtraction to prevent negative values).
+
+
+
