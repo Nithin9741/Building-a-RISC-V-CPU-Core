@@ -31,3 +31,12 @@ Building a RISC-V CPU Core using TL-Verilog
    
 7. **DMem:** Our test program executes entirely out of the register file and does not require a data memory (DMem). But no CPU is complete without one. The DMem is written to by store instructions and read from by load instructions.
 
+Designing the basic processor of 3 stages fetch, decode and execute based on RISC-V ISA.
+1. **Fetch**
+   Designing the basic processor of 3 stages fetch, decode and execute based on RISC-V ISA.
+   * Program Counter (PC): Holds the address of next Instruction
+   * Instruction Memory (IM): Holds the set of instructions to be executed
+
+
+
+
