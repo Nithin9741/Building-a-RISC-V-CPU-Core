@@ -37,6 +37,37 @@ Designing the basic processor of 3 stages fetch, decode and execute based on RIS
    * Program Counter (PC): Holds the address of next Instruction
    * Instruction Memory (IM): Holds the set of instructions to be executed
    fetching instructions from memory based on the program counter value and controlling the instruction memory read operation.
+2. **Decode**
+ There are 6 types of Instructions:
+
+- R-type - Register
+- I-type - Immediate
+- S-type - Store
+- B-type - Branch (Conditional Jump)
+- U-type - Upper Immediate
+- J-type - Jump (Unconditional Jump)
+- Instruction Format includes Opcode, immediate value, source address, destination address. During Decode Stage, processor decodes the instruction based on instruction format and type of instruction.
+
+Below is snapshot from Makerchip IDE after performing the Decode Stage.
+3. **Register File Read and Write**
+Here the Register file is 2 read, 1 write means 2 read and 1 write operation can happen simultanously.
+
+Inputs:
+- Read_Enable - Enable signal to perform read operation
+- Read_Address1 - Address1 from where data has to be read
+- Read_Address2 - Address2 from where data has to be read
+- Write_Enable - Enable signal to perform write operation
+- Write_Address - Address where data has to be written
+- Write_Data - Data to be written at Write_Address
+
+Outputs:
+- Read_Data1 - Data from Read_Address1
+- Read_Data2 - Data from Read_Address2
+
+Below is snapshot from Makerchip IDE after performing the Register File Read followed by Register File Write.
+4. **Execute**
+During the Execute Stage, both the operands perform the operation based on Opcode.
+Below is snapshot from Makerchip IDE after performing the Execute Stage.
 
 
 
