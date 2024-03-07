@@ -49,6 +49,8 @@ Designing the basic processor of 3 stages fetch, decode and execute based on RIS
 - Instruction Format includes Opcode, immediate value, source address, destination address. During Decode Stage, processor decodes the instruction based on instruction format and type of instruction.
 
 Below is snapshot from Makerchip IDE after performing the Decode Stage.
+
+
 3. **Register File Read and Write**
 Here the Register file is 2 read, 1 write means 2 read and 1 write operation can happen simultanously.
 
@@ -65,6 +67,8 @@ Outputs:
 - Read_Data2 - Data from Read_Address2
 
 Below is snapshot from Makerchip IDE after performing the Register File Read followed by Register File Write.
+
+
 4. **Execute**
 During the Execute Stage, both the operands perform the operation based on Opcode.
 Below is snapshot from Makerchip IDE after performing the Execute Stage.
