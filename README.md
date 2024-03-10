@@ -101,6 +101,9 @@ Output:
 
 7.**Completing the RISC-V CPU**
 
+![Screenshot (2)](https://github.com/Nithin9741/Building-a-RISC-V-CPU-Core/assets/101901668/e64deb6e-86e9-4542-a1c4-777835eab54f)
+
+
 Added Jumps and completed Instruction Decode and ALU for all instruction present in RV32I base integer instruction set.
 
 Below is final Snapshot of Complete Pipelined RISC-V CPU.
