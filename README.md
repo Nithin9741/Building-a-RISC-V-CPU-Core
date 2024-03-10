@@ -91,13 +91,13 @@ Similar to branch, load will also have 3 cycle delay. So, added a Data Memory 1 
 
 Inputs:
 
-Read_Enable - Enable signal to perform read operation
-Write_Enable - Enable signal to perform write operation
-Address - Address specified whether to read/write from
-Write_Data - Data to be written on Address (Store Instruction)
+- Read_Enable - Enable signal to perform read operation
+- Write_Enable - Enable signal to perform write operation
+- Address - Address specified whether to read/write from
+- Write_Data - Data to be written on Address (Store Instruction)
 Output:
 
-Read_Data - Data to be read from Address (Load Instruction)
+- Read_Data - Data to be read from Address (Load Instruction)
 
 7.**Completing the RISC-V CPU**
 
