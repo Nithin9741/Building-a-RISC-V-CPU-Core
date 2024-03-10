@@ -32,12 +32,16 @@ Building a RISC-V CPU Core using TL-Verilog
 7. **DMem:** Our test program executes entirely out of the register file and does not require a data memory (DMem). But no CPU is complete without one. The DMem is written to by store instructions and read from by load instructions.
 
 Designing the basic processor of 3 stages fetch, decode and execute based on RISC-V ISA.
-1. **Fetch** 
+
+1. **Fetch**
+
    Designing the basic processor of 3 stages fetch, decode and execute based on RISC-V ISA.
    * Program Counter (PC): Holds the address of next Instruction
    * Instruction Memory (IM): Holds the set of instructions to be executed
    fetching instructions from memory based on the program counter value and controlling the instruction memory read operation.
-2. **Decode**
+
+3. **Decode**
+
  There are 6 types of Instructions:
 
 - R-type - Register
@@ -52,6 +56,7 @@ Below is snapshot from Makerchip IDE after performing the Decode Stage.
 
 
 3. **Register File Read and Write**
+
 Here the Register file is 2 read, 1 write means 2 read and 1 write operation can happen simultanously.
 
 Inputs:
@@ -68,17 +73,18 @@ Outputs:
 
 Below is snapshot from Makerchip IDE after performing the Register File Read followed by Register File Write.
 
-
 4. **Execute**
 
 During the Execute Stage, both the operands perform the operation based on Opcode.
 
 Below is snapshot from Makerchip IDE after performing the Execute Stage.
+
 5. **Control Logic**
 
 During Decode Stage, branch target address is calculated and fed into PC mux. Before Execute Stage, once the operands are ready branch condition is checked.
 
 Below is snapshot from Makerchip IDE after including the control logic for branch instructions.
+
 6. **Load and store instructions and memory**
 
 Similar to branch, load will also have 3 cycle delay. So, added a Data Memory 1 write/read memory.
@@ -92,6 +98,7 @@ Write_Data - Data to be written on Address (Store Instruction)
 Output:
 
 Read_Data - Data to be read from Address (Load Instruction)
+
 7.**Completing the RISC-V CPU**
 
 Added Jumps and completed Instruction Decode and ALU for all instruction present in RV32I base integer instruction set.
