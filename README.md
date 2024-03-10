@@ -87,6 +87,8 @@ Below is snapshot from Makerchip IDE after performing the Execute Stage.
 During Decode Stage, branch target address is calculated and fed into PC mux. Before Execute Stage, once the operands are ready branch condition is checked.
 
 Below is snapshot from Makerchip IDE after including the control logic for branch instructions.
+ 
+ ![Screenshot (6)](https://github.com/Nithin9741/Building-a-RISC-V-CPU-Core/assets/101901668/290c9edd-8014-42a1-8d72-b613a754bb0b)
 
 6. **Load and store instructions and memory**
 
