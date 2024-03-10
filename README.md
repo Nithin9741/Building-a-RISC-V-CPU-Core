@@ -40,6 +40,8 @@ Designing the basic processor of 3 stages fetch, decode and execute based on RIS
    * Instruction Memory (IM): Holds the set of instructions to be executed
    fetching instructions from memory based on the program counter value and controlling the instruction memory read operation.
 
+  ![Screenshot (3)](https://github.com/Nithin9741/Building-a-RISC-V-CPU-Core/assets/101901668/7f97958f-ec8d-4ee2-aa6b-c0ab22f22f50)
+  
 3. **Decode**
 
  There are 6 types of Instructions:
