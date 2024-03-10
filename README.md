@@ -70,10 +70,33 @@ Below is snapshot from Makerchip IDE after performing the Register File Read fol
 
 
 4. **Execute**
+
 During the Execute Stage, both the operands perform the operation based on Opcode.
+
 Below is snapshot from Makerchip IDE after performing the Execute Stage.
+5. **Control Logic**
 
+During Decode Stage, branch target address is calculated and fed into PC mux. Before Execute Stage, once the operands are ready branch condition is checked.
 
+Below is snapshot from Makerchip IDE after including the control logic for branch instructions.
+6. **Load and store instructions and memory**
+
+Similar to branch, load will also have 3 cycle delay. So, added a Data Memory 1 write/read memory.
+
+Inputs:
+
+Read_Enable - Enable signal to perform read operation
+Write_Enable - Enable signal to perform write operation
+Address - Address specified whether to read/write from
+Write_Data - Data to be written on Address (Store Instruction)
+Output:
+
+Read_Data - Data to be read from Address (Load Instruction)
+7.**Completing the RISC-V CPU**
+
+Added Jumps and completed Instruction Decode and ALU for all instruction present in RV32I base integer instruction set.
+
+Below is final Snapshot of Complete Pipelined RISC-V CPU.
 
 
 
