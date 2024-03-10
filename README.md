@@ -56,6 +56,7 @@ Designing the basic processor of 3 stages fetch, decode and execute based on RIS
 
 Below is snapshot from Makerchip IDE after performing the Decode Stage.
 
+![Screenshot (4)](https://github.com/Nithin9741/Building-a-RISC-V-CPU-Core/assets/101901668/84a6b25a-b752-4559-8b4a-610c4a932b81)
 
 3. **Register File Read and Write**
 
@@ -73,13 +74,13 @@ Outputs:
 - Read_Data1 - Data from Read_Address1
 - Read_Data2 - Data from Read_Address2
 
-Below is snapshot from Makerchip IDE after performing the Register File Read followed by Register File Write.
-
 4. **Execute**
 
 During the Execute Stage, both the operands perform the operation based on Opcode.
 
 Below is snapshot from Makerchip IDE after performing the Execute Stage.
+
+![Screenshot (5)](https://github.com/Nithin9741/Building-a-RISC-V-CPU-Core/assets/101901668/8594bd30-ce41-46b6-b2a0-e60023afd25a)
 
 5. **Control Logic**
 
